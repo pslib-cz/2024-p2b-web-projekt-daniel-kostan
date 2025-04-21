@@ -1,5 +1,6 @@
 Figma: nevim, neumim ve figme  
 Github pages: https://pslib-cz.github.io/2024-p2b-web-projekt-daniel-kostan/  
+  
 Web: Informativní web o videohře Enlisted
 - uvodni stranka: informace o hre atd
 - galerie: pres JSlightgallery
