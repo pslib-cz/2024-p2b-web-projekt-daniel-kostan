@@ -1,13 +1,81 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enlisted Fan Web</title>
+</head>
+<body class="page">
+
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <img src="/images/logo.avif" alt="Logo Enlisted" class="header__logo" />
+      </div>
+      <h1 class="header__title">CZ ENLISTED FAN WEB</h1>
+      <button class="header__menu" aria-label="Otevřít menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <img src="banner.jpg" alt="Enlisted bojiště" class="hero__image" />
+    </section>
+
+    <section class="intro">
+      <h2 class="intro__title">Přidej se k boji!</h2>
+      <p class="intro__text">
+        Enlisted je akční válečná střílečka, kde velíš jednotkám vojáků v bitvách druhé světové války.
+      </p>
+      <p class="intro__text">Bojuj, veď svůj tým a změň historii!</p>
+      <div class="intro__platforms">
+        <p class="intro__platforms-title">Dostupné na platformách:</p>
+        <div class="intro__buttons">
+          <button class="button">Windows</button>
+          <button class="button">XBOX SERIES X/S</button>
+          <button class="button">XBOX ONE</button>
+          <button class="button">PS4</button>
+          <button class="button">PS5</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2 class="about__title">Enlisted Fan Web</h2>
+      <p class="about__text">
+        Tento web je určen všem fanouškům hry Enlisted.
+      </p>
+      <p class="about__text">
+        Najdeš tu novinky, návody pro začátečníky, přehled nejlepších zbraní i rozsáhlou galerii ze hry.
+      </p>
+      <p class="about__text">Přidej se k nám a získej výhodu na bojišti!</p>
+    </section>
+
+    <section class="trailer">
+      <h2 class="trailer__title">Oficiální trailer</h2>
+      <div class="trailer__video">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="news">
+      <h2 class="news__title">Novinky ze hry</h2>
+      <article class="news__item">
+        <h3 class="news__headline">Květnové slevy!</h3>
+        <p class="news__date">30. 4. 2025</p>
+        <ul class="news__list">
+          <li>50% sleva na prémium účet</li>
+          <li>50% sleva na vybrané squady</li>
+        </ul>
+        <img src="sale.jpg" alt="Obrázek slevy" class="news__image" />
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+
+</body>
 </html>
