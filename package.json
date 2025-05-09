@@ -1,5 +1,5 @@
 {
-  "name": "web-swiper-gallery",
+  "name": "web-projekt-daniel-kostan",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vituum": "^1.2.0"
   }
 }

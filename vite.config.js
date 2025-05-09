@@ -1,5 +1,14 @@
-import { defineConfig } from 'vite';
+import vituum from 'vituum'
 
-export default defineConfig({
-  plugins: [] // Temporarily remove `vituum` to test
-});
+export default {
+    plugins: [
+      vituum({
+        pages: {
+          normalizeBasePath: true
+        }, 
+        imports: {
+            paths: ['./src/styles/*/**', './src/scripts/*/**']
+        }
+      })
+    ],
+  }
