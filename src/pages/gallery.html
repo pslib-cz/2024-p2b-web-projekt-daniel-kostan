@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper | Example Page</title>
+    <style>
+        .swiper {
+            --swiper-theme-color: #ffba08;
+            --swiper-pagination-color: #ffba08;
+            --swiper-pagination-bullet-size: 16px;
+            --swiper-pagination-bullet-inactive-color: #999999;
+            --swiper-pagination-bullet-inactive-opacity: 0.7;
+            --swiper-navigation-color: #ffba08;
+            --swiper-navigation-size: 32px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Swiper</h1>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide picture">
+                    <a class="picture__link" href="%BASE_URL%images/big/Sk2014_01.JPG">
+                        <img class="picture__image" src="%BASE_URL%images/Sk2014_01.JPG" alt="Kanál v Amsterodamu">
+                    </a>
+                </div>
+                <div class="swiper-slide picture">
+                    <a class="picture__link" href="%BASE_URL%images/big/Sk2014_02.JPG">
+                        <img class="picture__image" src="%BASE_URL%images/Sk2014_02.JPG" alt="Amsterodam (pobřeží)">
+                    </a>
+                </div>
+                <div class="swiper-slide picture">
+                    <a class="picture__link" href="%BASE_URL%images/big/Sk2014_03.JPG">
+                        <img class="picture__image" src="%BASE_URL%images/Sk2014_03.JPG" alt="Trajekt do UK">
+                    </a>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+
+        <p><a href="../">homepage link</a></p>
+        <p><a href="%BASE_URL%">homepage link <img src="/vite.svg"></a></p>
+    </div>
+    <script type="module" src="/src/scripts/swiper.js"></script>
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
+</html>

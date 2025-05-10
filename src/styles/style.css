@@ -8,6 +8,16 @@ body {
     background-color: #1E1E1E;
     color: white;
   }
+  h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
   
   /* Header */
   .header {
@@ -47,37 +57,71 @@ body {
     color: white;
     cursor: pointer;
   }
-  
-  
+
+  .banner {
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner__image {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+
   /* Footer */
   .footer {
     background-color: #000000;
     text-align: center;
-    padding: 1rem;
+    margin: 0;
     font-size: 0.8rem;
+  }
+  .footer__text {
+    color: white;
+    margin: 0;
   }
   
   /* Obsah hlavní stránky */
   .main {
-    padding: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
-  
-  .main__section {
-    margin-bottom: 2rem;
-  }
-  
-  .main__title {
-    font-size: 1.3rem;
-    font-weight: bold;
+  .main section {
+    background-color: #2D2D2D;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  
-  .main__button {
-    background-color: #333;
+  .intro__platforms {
+    padding-bottom: 0.5rem;
+  }
+  .intro__platforms-title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+  }
+  .intro__buttons {
+    background-color: #585858;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+  }
+  .button {
+    background-color: #262626;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    margin: 0.2rem;
-    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
   }
   
