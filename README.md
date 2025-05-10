@@ -3,7 +3,7 @@ Github pages: [Odkaz na živý web](https://pslib-cz.github.io/2024-p2b-web-proj
   
 Web: Informativní web o videohře Enlisted
 - uvodni stranka: informace o hre atd
-- galerie: pres JSlightgallery
+- galerie: pres swiper
 - meta: prehled nejlepsich zbrani, tanku, letadel pro kazdou frakci
 - tutorial: navod na hru i s detaily
 - odkazy & kontakty: odkazy, kontakty
