@@ -1,45 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/hamburger.css">
+    <link rel="stylesheet" href="/src/styles/gallery.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiper | Example Page</title>
-    <style>
-        .swiper {
-            --swiper-theme-color: #ffba08;
-            --swiper-pagination-color: #ffba08;
-            --swiper-pagination-bullet-size: 16px;
-            --swiper-pagination-bullet-inactive-color: #999999;
-            --swiper-pagination-bullet-inactive-opacity: 0.7;
-            --swiper-navigation-color: #ffba08;
-            --swiper-navigation-size: 32px;
-        }
-    
-    </style>
+    <title>Galerie</title>
+
 </head>
 
 <body>
+    <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <img src="/images/logo.avif" alt="Logo Enlisted" class="header__logo" />
+      </div>
+      <h1 class="header__title">CZ ENLISTED FAN WEB</h1>
+      <button class="header__menu hamburger-btn" aria-label="Otevřít menu">&#9776;</button>
+      <nav class="hamburger-zone">
+        <ul class="navigation">
+          <li><a href="%BASE_URL%index.html">Úvod</a></li>
+          <li><a href="%BASE_URL%gallery.html">Galerie</a></li>
+          <li><a href="%BASE_URL%meta.html">Meta</a></li>
+          <li><a href="%BASE_URL%tutorial.html">Tutoriál</a></li>
+          <li><a href="%BASE_URL%odkazy.html">Odkazy & Kontakty</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>	
     <div class="app">
-        <h1>Swiper</h1>
-
+        <h2 class="page__title">Galerie</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide picture">
                     <a class="picture__link" href="%BASE_URL%images/big/Sk2014_01.JPG">
-                        <img class="picture__image" src="%BASE_URL%images/Sk2014_01.JPG" alt="Kanál v Amsterodamu">
+                        <img class="picture__image" src="/images/gallery/gallery1.avif" alt="Obrazek 1">
                     </a>
                 </div>
                 <div class="swiper-slide picture">
                     <a class="picture__link" href="%BASE_URL%images/big/Sk2014_02.JPG">
-                        <img class="picture__image" src="%BASE_URL%images/Sk2014_02.JPG" alt="Amsterodam (pobřeží)">
+                        <img class="picture__image" src="/images/gallery/gallery2.avif" alt="Obrazek 2">
                     </a>
                 </div>
                 <div class="swiper-slide picture">
                     <a class="picture__link" href="%BASE_URL%images/big/Sk2014_03.JPG">
-                        <img class="picture__image" src="%BASE_URL%images/Sk2014_03.JPG" alt="Trajekt do UK">
+                        <img class="picture__image" src="/images/gallery/gallery3.avif" alt="Obrazek 3">
                     </a>
                 </div>
             </div>
@@ -53,11 +61,10 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
-
-
-        <p><a href="../">homepage link</a></p>
-        <p><a href="%BASE_URL%">homepage link <img src="/vite.svg"></a></p>
     </div>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
+    </footer>
     <script type="module" src="/src/scripts/swiper.js"></script>
     <script type="module" src="/src/scripts/main.js"></script>
 </body>

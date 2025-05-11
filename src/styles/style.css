@@ -17,6 +17,9 @@ body {
     padding: 0;
     padding-bottom: 1rem;
   }
+  .page__title {
+    margin: 20px;
+  }
   
   /* Header */
   .header {
@@ -107,6 +110,7 @@ body {
   .footer__text {
     color: white;
     margin: 0;
+    padding: 0;
   }
   
   /* Obsah hlavní stránky */
@@ -114,12 +118,11 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .main section {
+  section {
     background-color: #2D2D2D;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
   }
   .intro__platforms {
     padding-bottom: 0.5rem;
@@ -159,7 +162,7 @@ body {
     object-fit: cover;
     object-position: center;
   }
-@media (min-width: 670px) {
+@media (min-width: 700px) {
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -211,11 +214,20 @@ body {
     grid-row: 3;
   }
   .trailer__video-container {
-    height: auto;
+    height: 250px;
   }
 }
 @media (min-width: 980px){
-    .main {
+  .header {
+    height: 60px;
+  }
+  .header__title {
+    font-size: 1.5rem;
+  }
+  .header__logo-container {
+    height: 60px;
+  }
+  .main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
@@ -278,6 +290,6 @@ body {
   }
 
   .button {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.2rem;
   }
 }
