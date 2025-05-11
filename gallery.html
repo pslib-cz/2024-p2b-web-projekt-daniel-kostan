@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/2024-p2b-web-projekt-daniel-kostan/vite.svg" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiper | Example Page</title>
-    <style>
-        .swiper {
-            --swiper-theme-color: #ffba08;
-            --swiper-pagination-color: #ffba08;
-            --swiper-pagination-bullet-size: 16px;
-            --swiper-pagination-bullet-inactive-color: #999999;
-            --swiper-pagination-bullet-inactive-opacity: 0.7;
-            --swiper-navigation-color: #ffba08;
-            --swiper-navigation-size: 32px;
-        }
-    
-    </style>
+    <title>Galerie</title>
+
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/swiper-DcjeJ9ci.js"></script>
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/swiper-DF0pcLGN.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/hamburger-DzGNCfwF.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/main-Bgzv3cQd.js"></script>
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/swiper-OSsuDtBi.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/style-DPv7xWJN.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/swiper-Ds_YmOBQ.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/style-BU48m2BP.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/hamburger-Bje83K-L.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/gallery-B4cTMbep.css">
 </head>
 
 <body>
+    <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <img src="/2024-p2b-web-projekt-daniel-kostan/images/logo.avif" alt="Logo Enlisted" class="header__logo" />
+      </div>
+      <h1 class="header__title">CZ ENLISTED FAN WEB</h1>
+      <button class="header__menu hamburger-btn" aria-label="Otevřít menu">&#9776;</button>
+      <nav class="hamburger-zone">
+        <ul class="navigation">
+          <li><a href="/2024-p2b-web-projekt-daniel-kostan/index.html">Úvod</a></li>
+          <li><a href="/2024-p2b-web-projekt-daniel-kostan/gallery.html">Galerie</a></li>
+          <li><a href="/2024-p2b-web-projekt-daniel-kostan/meta.html">Meta</a></li>
+          <li><a href="/2024-p2b-web-projekt-daniel-kostan/tutorial.html">Tutoriál</a></li>
+          <li><a href="/2024-p2b-web-projekt-daniel-kostan/odkazy.html">Odkazy & Kontakty</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>	
     <div class="app">
-        <h1>Swiper</h1>
-
+        <h2 class="page__title">Galerie</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide picture">
                     <a class="picture__link" href="/2024-p2b-web-projekt-daniel-kostan/images/big/Sk2014_01.JPG">
-                        <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/Sk2014_01.JPG" alt="Kanál v Amsterodamu">
+                        <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/gallery/gallery1.avif" alt="Obrazek 1">
                     </a>
                 </div>
                 <div class="swiper-slide picture">
                     <a class="picture__link" href="/2024-p2b-web-projekt-daniel-kostan/images/big/Sk2014_02.JPG">
-                        <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/Sk2014_02.JPG" alt="Amsterodam (pobřeží)">
+                        <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/gallery/gallery2.avif" alt="Obrazek 2">
                     </a>
                 </div>
                 <div class="swiper-slide picture">
                     <a class="picture__link" href="/2024-p2b-web-projekt-daniel-kostan/images/big/Sk2014_03.JPG">
-                        <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/Sk2014_03.JPG" alt="Trajekt do UK">
+                        <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/gallery/gallery3.avif" alt="Obrazek 3">
                     </a>
                 </div>
             </div>
@@ -58,11 +66,10 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
-
-
-        <p><a href="../">homepage link</a></p>
-        <p><a href="/2024-p2b-web-projekt-daniel-kostan/">homepage link <img src="/2024-p2b-web-projekt-daniel-kostan/vite.svg"></a></p>
-    </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
+    </footer>
 </body>
 
 </html>
