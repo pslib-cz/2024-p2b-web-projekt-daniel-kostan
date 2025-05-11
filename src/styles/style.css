@@ -52,7 +52,7 @@ body {
   .header__menu {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     cursor: pointer;
   }
@@ -147,4 +147,137 @@ body {
     border-radius: 5px;
     text-decoration: none;
   }
-  
+  .trailer__video-container {
+    height: 100px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .trailer__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+@media (min-width: 670px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .main section {
+    margin: 0;
+  }
+
+  .banner__image-container {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    height: auto;
+  }
+  .banner__image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .intro {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .about {
+    grid-column: 3 / 5;
+    grid-row: 2;
+  }
+
+  .news {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .trailer {
+    grid-column: 3 / 5;
+    grid-row: 3;
+  }
+  .trailer__video-container {
+    height: auto;
+  }
+}
+@media (min-width: 980px){
+    .main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .banner__image-container {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .intro {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .about {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .news {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .trailer {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .banner__image-container {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .intro {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .about {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .news {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .trailer {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+  }
+}
