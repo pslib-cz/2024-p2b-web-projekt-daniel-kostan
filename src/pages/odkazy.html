@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/hamburger.css">
+    <link rel="stylesheet" href="/src/styles/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odkazy & Kontakty</title>
+
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <img src="/images/logo.avif" alt="Logo Enlisted" class="header__logo" />
+      </div>
+      <h1 class="header__title">CZ ENLISTED FAN WEB</h1>
+      <button class="header__menu hamburger-btn" aria-label="Otevřít menu">&#9776;</button>
+      <nav class="hamburger-zone">
+        <ul class="navigation">
+          <li><a href="%BASE_URL%index.html">Úvod</a></li>
+          <li><a href="%BASE_URL%gallery.html">Galerie</a></li>
+          <li><a href="%BASE_URL%meta.html">Meta</a></li>
+          <li><a href="%BASE_URL%tutorial.html">Tutoriál</a></li>
+          <li><a href="%BASE_URL%odkazy.html">Odkazy & Kontakty</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>	
+    <main>
+      <h2 class="page__title">Odkazy & Kontakty</h2>
+      <section class="">
+        <h3>Tvůrce webu:</h3>
+        <p class="odkaz__text">Daniel Kostan, P2B, Průmyslovka Liberec</p>
+        <p class="odkaz__text">Nickname v Enlisted: danikos18</p>
+        <p class="odkaz__text">Veterán videohry Enlisted:</p>
+        <ul class="odkaz__seznam">
+          <li>2400+ odehraných bitev</li>
+          <li>800+ odehraných hodin</li>
+          <li>Účastník profesionálních komunitních eventů</li>
+        </ul>
+        <p class="odkaz__text">V případě dotazů:</p>
+        <ul class="odkaz__seznam">
+          <li>Discord: dandakos (707198765060063323)</li>
+          <li>nebo:</li>
+        </ul>
+          <div class="form-container">
+            <div class="form-row">
+              <div>
+                <label for="jmeno">Jméno:</label>
+                <input type="text" id="jmeno" name="jmeno">
+              </div>
+              <div>
+                <label for="prijmeni">Příjmení:</label>
+                <input type="text" id="prijmeni" name="prijmeni">
+              </div>
+            </div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="zprava">Zpráva:</label>
+            <textarea id="zprava" name="zprava"></textarea>
+
+            <button class="button-send" type="submit">Odeslat</button>
+          </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
+    </footer>
+    <script type="module" src="/src/scripts/swiper.js"></script>
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.odkaz__text {
+padding: 0;
+}
+.odkaz__seznam {
+margin: 0;
+}
+.odkaz__seznam li {
+    padding-bottom: 2px;
+}
+.form-container {
+    padding: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    max-width: 1200px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+input[type="email"]{
+    width: 100%;
+    max-width: 375px;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 375px;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc;
+}
+
+.button-send {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: )

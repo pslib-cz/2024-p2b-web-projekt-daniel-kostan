@@ -19,6 +19,7 @@ body {
   }
   .page__title {
     margin: 20px;
+    text-align: center;
   }
   
   /* Header */
@@ -150,8 +151,10 @@ body {
     border-radius: 5px;
     text-decoration: none;
   }
+  .trailer {
+    min-height: 200px;
+  }
   .trailer__video-container {
-    height: 100px;
     overflow: hidden;
     margin: 0;
     padding: 0;

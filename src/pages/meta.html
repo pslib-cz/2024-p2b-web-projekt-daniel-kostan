@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/style.css">
     <link rel="stylesheet" href="/src/styles/hamburger.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/meta.css">
+    <title>Meta</title>
 </head>
 <body>
     <header class="header">
@@ -32,11 +33,86 @@
             <p class="intro__text">Přehled nejlepších zbraní, tanků a letadel</p>
             <p class="intro__text">Vyber si frakci:</p>
         </section>
+      <section class="faction-select">
+        <div class="faction-icons">
+          <img src="/images/meta/ussr_logo.avif" alt="USSR" class="faction-btn" data-faction="ussr" />
+          <img src="/images//meta/ger_logo.avif" alt="Germany" class="faction-btn" data-faction="germany" />
+          <img src="/images//meta/usa_logo.avif" alt="USA" class="faction-btn" data-faction="usa" />
+          <img src="/images//meta/jap_logo.avif" alt="Japan" class="faction-btn" data-faction="japan" />
+        </div>
+      </section>
+
+      <section class="faction-content-wrapper">
+        <div class="faction-content" data-faction="ussr">
+          <div class="faction-header">
+            <img src="/images/meta/ussr_logo.avif" alt="USSR icon" />
+            <h3>USSR</h3>
+          </div>
+
+          <div class="category">
+            <h4>Zbraně:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/avt_40.avif" alt="AVT-40" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 15.3</p>
+                    <p><strong>Rate of fire:</strong> 660</p>
+                    <p><strong>Reload time:</strong> 2.5 s</p>
+                    <p><strong>Zásobník:</strong> 15 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p><strong>Výhody:</strong><br>+ Damage: 15.3</p>
+                    <p><strong>Nevýhody:</strong><br>- Malý zásobník na 15 ran<br>- Velmi nepříjemný vysoký a náhodný recoil</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <img src="/images/avs36.jpg" alt="AVS-36" />
+              <div class="weapon-info">
+                <h5>AVS-36</h5>
+                <div class="weapon-info__stats">
+                  <p><strong>Damage:</strong> 15.8</p>
+                  <p><strong>Rate of fire:</strong> 660</p>
+                  <p><strong>Reload time:</strong> 2.5 s</p>
+                  <p><strong>Zásobník:</strong> 15 ran</p>
+                </div>
+                <div class="weapon-info__comment">
+                  <p><strong>Výhody:</strong><br>+ Damage: 15.8</p>
+                  <p><strong>Nevýhody:</strong><br>- Malý zásobník na 15 ran<br>- Vyšší recoil než AVT-40, ale méně náhodný</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h4>Tanky:</h4>
+            <p>Zatím žádné záznamy.</p>
+          </div>
+        </div>
+        <div class="faction-content" data-faction="germany" style="display: none;">
+          <p>Obsah pro Německo</p>
+        </div>
+
+        <div class="faction-content" data-faction="usa" style="display: none;">
+          <p>Obsah pro USA</p>
+        </div>
+
+        <div class="faction-content" data-faction="japan" style="display: none;">
+          <p>Obsah pro Japonsko</p>
+        </div>
+      </section>
+
     </main>
     <footer class="footer">
         <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
     </footer>
     <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/meta.js"></script>
 
 </body>
 </html>
