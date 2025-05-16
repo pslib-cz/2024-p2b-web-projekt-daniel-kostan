@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
+    <title>Odkazy & Kontakty</title>
 
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/swiper-DF0pcLGN.js"></script>
@@ -14,7 +13,7 @@
   <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/swiper-Ds_YmOBQ.css">
   <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/style-0j_Zlah0.css">
   <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/hamburger-Bje83K-L.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/gallery-B4cTMbep.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/form-Dr8ipaWy.css">
 </head>
 
 <body>
@@ -36,31 +35,46 @@
       </nav>
     </div>
     </header>	
-    <div class="app">
-        <h2 class="page__title">Galerie</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide picture">
-                    <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/gallery/gallery1.avif" alt="Obrazek 1">
-                </div>
-                <div class="swiper-slide picture">
-                    <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/gallery/gallery2.avif" alt="Obrazek 2">
-                </div>
-                <div class="swiper-slide picture">
-                    <img class="picture__image" src="/2024-p2b-web-projekt-daniel-kostan/images/gallery/gallery3.avif" alt="Obrazek 3">
-                </div>
+    <main>
+      <h2 class="page__title">Odkazy & Kontakty</h2>
+      <section class="">
+        <h3>Tvůrce webu:</h3>
+        <p class="odkaz__text">Daniel Kostan, P2B, Průmyslovka Liberec</p>
+        <p class="odkaz__text">Nickname v Enlisted: danikos18</p>
+        <p class="odkaz__text">Veterán videohry Enlisted:</p>
+        <ul class="odkaz__seznam">
+          <li>2400+ odehraných bitev</li>
+          <li>800+ odehraných hodin</li>
+          <li>Účastník profesionálních komunitních eventů</li>
+        </ul>
+        <p class="odkaz__text">V případě dotazů:</p>
+        <ul class="odkaz__seznam">
+          <li>Discord: dandakos (707198765060063323)</li>
+          <li>nebo:</li>
+        </ul>
+          <div class="form-container">
+            <div class="form-row">
+              <div>
+                <label for="jmeno">Jméno:</label>
+                <input type="text" id="jmeno" name="jmeno">
+              </div>
+              <div>
+                <label for="prijmeni">Příjmení:</label>
+                <input type="text" id="prijmeni" name="prijmeni">
+              </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
-    </div>
+            <label for="zprava">Zpráva:</label>
+            <textarea id="zprava" name="zprava"></textarea>
+
+            <button class="button-send" type="submit">Odeslat</button>
+          </div>
+
+      </section>
+    </main>
     <footer class="footer">
         <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
     </footer>

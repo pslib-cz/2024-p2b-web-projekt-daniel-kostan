@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta</title>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/hamburger-DzGNCfwF.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/main-Bgzv3cQd.js"></script>
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/style-BU48m2BP.css">
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-daniel-kostan/assets/meta-Bsfx6EX9.js"></script>
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/style-0j_Zlah0.css">
   <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/hamburger-Bje83K-L.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-daniel-kostan/assets/meta-COOJf-R-.css">
 </head>
 <body>
     <header class="header">
@@ -34,11 +36,740 @@
         <section>
             <p class="intro__text">Přehled nejlepších zbraní, tanků a letadel</p>
             <p class="intro__text">Vyber si frakci:</p>
-        </section>
+        <div class="faction-select">
+          <div class="faction-icons">
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images/meta/ussr_logo.avif" alt="USSR" class="faction-btn" data-faction="ussr" />
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images//meta/ger_logo.avif" alt="Germany" class="faction-btn" data-faction="germany" />
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images//meta/usa_logo.avif" alt="USA" class="faction-btn" data-faction="usa" />
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images//meta/jap_logo.avif" alt="Japan" class="faction-btn" data-faction="japan" />
+          </div>
+        </div>
+      </section>
+
+      <section class="faction-content-wrapper">
+        <div class="faction-content" data-faction="ussr">
+          <div class="faction-header">
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images/meta/ussr_logo.avif" alt="USSR icon" />
+            <h3>USSR</h3>
+          </div>
+
+          <div class="category">
+            <h4>Zbraně:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/2024-p2b-web-projekt-daniel-kostan/images/meta/avt_40.avif" alt="AVT-40" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 15.3</p>
+                    <p><strong>Rate of fire:</strong> 660</p>
+                    <p><strong>Reload time:</strong> 2.5 s</p>
+                    <p><strong>Zásobník:</strong> 15 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>AVT-40 je hlavní zbraní USSR</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 15.3<br>+ Dostupné pro class Rifleman => možnost 9 členných squadů<br>+ Bajonet</p>
+                    <p><strong>Nevýhody:</strong><br>- Malý zásobník na 15 ran<br>- Velmi nepříjemný vysoký a náhodný recoil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/avs_36.avif" alt="AVS-36" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 15.8</p>
+                    <p><strong>Rate of fire:</strong> 660</p>
+                    <p><strong>Reload time:</strong> 2.5 s</p>
+                    <p><strong>Zásobník:</strong> 15 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Alternativa k AVT-40</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 15.8<br>+ Dostupné pro class Rifleman => možnost 9 členných squadů<br>+ Bajonet</p>
+                    <p><strong>Nevýhody:</strong><br>- Malý zásobník na 15 ran<br>- Vyšší recoil než AVT-40, ale méně náhodný</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/fedorov_avtomat.avif" alt="Fedorov avtomat" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 13.9</p>
+                    <p><strong>Rate of fire:</strong> 600</p>
+                    <p><strong>Reload time:</strong> 3.0 s</p>
+                    <p><strong>Zásobník:</strong> 25 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Nejlepší útočná puška/zbraň USSR</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 13.9<br>+ Zásobník na 25 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter<br>- Nepříjemný recoil a horší přesnost než AVT-40 nebo AVS-36<br>- Nemá bajonet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/as_44.avif" alt="AS-44" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 9.6</p>
+                    <p><strong>Rate of fire:</strong> 660</p>
+                    <p><strong>Reload time:</strong> 2.7 s</p>
+                    <p><strong>Zásobník:</strong> 30 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Alternativa k Fedorov Avtomat</p>
+                    <p><strong>Výhody:</strong><br>+ Kontrolovatelný recoil a příjemná mířidla<br>+ Zásobník na 30 ran<br>+ Bajonet</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter<br>- Horší přesnost než AVT-40 nebo AVS-36</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/ppsh_41.avif" alt="PPSh-41" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 6.6</p>
+                    <p><strong>Rate of fire:</strong> 1150</p>
+                    <p><strong>Reload time:</strong> 3.4 s</p>
+                    <p><strong>Zásobník:</strong> 71 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Nejlepší samopal USSR, v porovnání s jinými frakcemi velký podprůměr</p>
+                    <p><strong>Výhody:</strong><br>+ Zásobník na 71 ran<br>+ ROF 1150</p>
+                    <p><strong>Nevýhody:</strong><br>- Příšerná přesnost a nekontrolovatelný recoil<br>- Damage: 6.6<br>- Velocita: 450 m/s (kulky padají rychle dolů a ztrácejí damage)<br>- Dostupné pouze pro class Assaulter</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/rd_44.avif" alt="RD 44" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 9.9</p>
+                    <p><strong>Rate of fire:</strong> 830</p>
+                    <p><strong>Reload time:</strong> 5.1 s</p>
+                    <p><strong>Zásobník:</strong> 100 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní kulomet USSR</p>
+                    <p><strong>Výhody:</strong><br>+ Nábojový pás na 100 ran<br>+ Malá váha 7.4 kg => rychlý sprint (v porovnání s jinými kulomety)</p>
+                    <p><strong>Nevýhody:</strong><br>- Malý damage: 9.9 (v porovnání s jinými kulomety)<br>- Dostupné pouze pro class Machine gunner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h4>Tanky:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/is_2-1944.avif" alt="IS 2 (1944)" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Hlavní puška:</strong> 122 mm</p>
+                    <p><strong>Brnění:</strong> 120/90/60</p>
+                    <p><strong>Max. rychlost:</strong> 42.17 km/h</p>
+                    <p><strong>Reload time:</strong> 21.0 s</p>
+                    <p><strong>Kulomety:</strong> 7.62mm DT Machine Gun + 12/7mm DShK Machine Gun</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní tank USSR, nejhorší top tier tank ve hře</p>
+                    <p><strong>Výhody:</strong><br>+ 122 mm puška: efektivní na pěchotu</p>
+                    <p><strong>Nevýhody:</strong><br>- 122 mm puška: absolutně žádný damage tankům<br>- Reload time: 21 s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h4>Letadla:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/tu_2s.avif" alt="Tu-2S" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 560.88 km/h</p>
+                    <p><strong>Bomby:</strong> 6 x 250 kg</p>
+                    <p><strong>Rakety:</strong> N/A</p>
+                    <p><strong>Kulomety:</strong> 20mm ShVAK Cannon X2 + 3 x 12.7mm Berezin UB Machine Gun</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní bombardér USSR</p>
+                    <p><strong>Výhody:</strong><br>+ 6 x 250 kg bomby<br>+ Hodně kulometů</p>
+                    <p><strong>Nevýhody:</strong><br>- Horší manévrovatelnost</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/su_9.avif" alt="Su-9" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 898.55 km/h</p>
+                    <p><strong>Bomby:</strong> 1 x 500 kg</p>
+                    <p><strong>Rakety:</strong> N/A</p>
+                    <p><strong>Kulomety:</strong> 37mm N-37 Cannon X1 + 23mm NS-32 cannon X2</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní stíhací letoun USSR</p>
+                    <p><strong>Výhody:</strong><br>+ Vysoká rychlost a manévrovatelnost</p>
+                    <p><strong>Nevýhody:</strong><br>- Málo kulometů</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="faction-content" data-faction="germany" style="display: none;">
+          <div class="faction-header">
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images/meta/ger_logo.avif" alt="Germany icon" />
+            <h3>Německo</h3>
+          </div>
+          <div class="category">
+            <h4>Zbraně:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/fg_42_2.avif" alt="FG 42 II" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 14.4</p>
+                    <p><strong>Rate of fire:</strong> 830</p>
+                    <p><strong>Reload time:</strong> 2.6 s</p>
+                    <p><strong>Zásobník:</strong> 20 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>FG 42 II je hlavní zbraní Německa</p>
+                    <p><strong>Výhody:</strong><br>+ Rate of fire: 830<br>+ Dostupné pro class Rifleman => možnost 9 členných squadů<br>+ Kontrolovatelný recoil a příjemná mířidla</p>
+                    <p><strong>Nevýhody:</strong><br>- Chybí bajonet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/stg_44.avif" alt="StG 44" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 9.6</p>
+                    <p><strong>Rate of fire:</strong> 650</p>
+                    <p><strong>Reload time:</strong> 2.6 s</p>
+                    <p><strong>Zásobník:</strong> 30 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Nejlepší útočná puška Německa</p>
+                    <p><strong>Výhody:</strong><br>+ Téměř nulový recoil a vysoká přesnost<br>+ Zásobník na 30 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter<br>- Nemá bajonet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/stg_44_sniper.avif" alt="Sniper StG 44" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 9.6</p>
+                    <p><strong>Rate of fire:</strong> 650</p>
+                    <p><strong>Reload time:</strong> 2.6 s</p>
+                    <p><strong>Zásobník:</strong> 30 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>StG 44, akorát že s hledím, nejlepší zbraň s hledím ve hře</p>
+                    <p><strong>Výhody:</strong><br>+ Téměř nulový recoil a vysoká přesnost<br>+ Zásobník na 30 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Sniper</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/kiraly_39.avif" alt="Kiraly 39M" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 7.9</p>
+                    <p><strong>Rate of fire:</strong> 870</p>
+                    <p><strong>Reload time:</strong> 2.0 s</p>
+                    <p><strong>Zásobník:</strong> 40 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Jeden z nelepších samopalů hry</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 7.9<br>+ Malý recoil a dobrá přesnost<br>+ Zásobník na 40 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter<br>- Nemá bajonet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/mg_42_100.avif" alt="MG-42 100" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 13.2</p>
+                    <p><strong>Rate of fire:</strong> 990</p>
+                    <p><strong>Reload time:</strong> 5.6 s</p>
+                    <p><strong>Zásobník:</strong> 100 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Nejlepší kulomet hry, dobrá kontrolovatelnost + 100 nábojů s vysokým damagem </p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 13.2<br>+ Nábojový pás na 100 ran<br>+ Dobrá přesnost a kontrolovatelnost (v rámci kulometů)</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Machine gunner<br>- Vyšší váha => pomalejší sprint</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/mg_81.avif" alt="MG 81" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 13.2</p>
+                    <p><strong>Rate of fire:</strong> 1760</p>
+                    <p><strong>Reload time:</strong> 4.6 s</p>
+                    <p><strong>Zásobník:</strong> 100 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Alternativa k MG-42 100 s šíleným ROF => horší kontrolovatelnost</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 13.2<br>+ Nábojový pás na 100 ran<br>+ Šílený ROF: 1760</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Machine gunner<br>- Vyšší váha => pomalejší sprint<br>- Velmi nekontrolovatelný</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h4>Tanky:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/tiger_2h.avif" alt="Tiger II (H)" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Hlavní puška:</strong> 88 mm</p>
+                    <p><strong>Brnění:</strong> 150/80/80</p>
+                    <p><strong>Max. rychlost:</strong> 41.67 km/h</p>
+                    <p><strong>Reload time:</strong> 8.5 s</p>
+                    <p><strong>Kulomety:</strong> 2 x 7.92mm MG34 Machine Gun</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní tank Německa, nejlepší tank hry</p>
+                    <p><strong>Výhody:</strong><br>+ 88 mm puška: perfektní proti tankům i proti pěchotě<br>+ Silné brnění<br>+ Rychlý reload: 8.5 s</p>
+                    <p><strong>Nevýhody:</strong><br>- pouze 2 x 7.92mm kulomety</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h4>Letadla:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/ju_188-a2_.avif" alt="Ju 188 A-2" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 559.44 km/h</p>
+                    <p><strong>Bomby:</strong> 6 x 250 kg</p>
+                    <p><strong>Rakety:</strong> N/A</p>
+                    <p><strong>Kulomety:</strong> 13mm MG 131 Machine Gun + 2 x 20mm MG 151 Cannon + 7.92mm MG 81 Machine Gun X2</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní bombardér Německa</p>
+                    <p><strong>Výhody:</strong><br>+ 6 x 250 kg bomby<br>+ Hodně kulometů</p>
+                    <p><strong>Nevýhody:</strong><br>- Horší manévrovatelnost</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/me_262.avif" alt="Me 262 A-1a/Jabo" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 887.75 km/h</p>
+                    <p><strong>Bomby:</strong> 1 x 500 kg</p>
+                    <p><strong>Rakety:</strong> N/A</p>
+                    <p><strong>Kulomety:</strong> 30mm MK 108 Cannon X4</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní stíhací letoun Německa</p>
+                    <p><strong>Výhody:</strong><br>+ Vysoká rychlost a manévrovatelnost<br>+ Velmi účinné 30mm náboje</p>
+                    <p><strong>Nevýhody:</strong><br>- Chybí extra kulomety</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-content" data-faction="usa" style="display: none;">
+          <div class="faction-header">
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images/meta/usa_logo.avif" alt="USA icon" />
+            <h3>USA</h3>
+          </div>
+          <div class="category">
+            <h4>Zbraně:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/t20.avif" alt="T20 rifle" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 15.3</p>
+                    <p><strong>Rate of fire:</strong> 710</p>
+                    <p><strong>Reload time:</strong> 2.3 s</p>
+                    <p><strong>Zásobník:</strong> 20 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>T20 rifle je hlavní zbraní USA</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 15.3<br>+ Dostupné pro class Rifleman => možnost 9 členných squadů<br>+ Kontrolovatelný recoil<br>+ Bajonet</p>
+                    <p><strong>Nevýhody:</strong><br>- Horší mířidla</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/m2_carbine.avif" alt="M2 Carbine" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 8.8</p>
+                    <p><strong>Rate of fire:</strong> 750</p>
+                    <p><strong>Reload time:</strong> 2.8 s</p>
+                    <p><strong>Zásobník:</strong> 30 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Alternativa pro T20, charakteristikami spíše připomíná útočné pušky</p>
+                    <p><strong>Výhody:</strong><br>+ Dostupné pro class Rifleman => možnost 9 členných squadů<br>+ Zásobník na 30 ran<br>+ Bajonet</p>
+                    <p><strong>Nevýhody:</strong><br>- Nepříjemný recoil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/hyde_m1944.avif" alt="Hyde M1944" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 9.4</p>
+                    <p><strong>Rate of fire:</strong> 800</p>
+                    <p><strong>Reload time:</strong> 2.6 s</p>
+                    <p><strong>Zásobník:</strong> 30 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní útočná puška USA</p>
+                    <p><strong>Výhody:</strong><br>+ ROF: 800<br>+ Zásobník na 30 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/m1928a1_thompson_50.avif" alt="M1928 Thompson 50" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 8.2</p>
+                    <p><strong>Rate of fire:</strong> 810</p>
+                    <p><strong>Reload time:</strong> 2.9 s</p>
+                    <p><strong>Zásobník:</strong> 50 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Nejlepší samopal USA, v porovnání s ostaními frakcemi podprůměrný</p>
+                    <p><strong>Výhody:</strong><br>+ Zásobník na 50 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter<br>- Velocita: 265 m/s (kulky padají rychle dolů a ztrácejí damage)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/browning_m1919a6.avif" alt="Browning M1919A6" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 13.2</p>
+                    <p><strong>Rate of fire:</strong> 550</p>
+                    <p><strong>Reload time:</strong> 5.5 s</p>
+                    <p><strong>Zásobník:</strong> 100 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní kulomet USA, nejhorší top tier kulomet</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 13.2<br>+ Nábojový pás na 100 ran<br>+ Dobrá přesnost a kontrolovatelnost (v rámci kulometů)</p>
+                    <p><strong>Nevýhody:</strong><br>- Velmi pomalý ROF: 550<br>- Dostupné pouze pro class Machine gunner<br>- Vyšší váha => pomalejší sprint</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="category">
+            <h4>Tanky:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/t26e1_1.avif" alt="T26E1-1" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Hlavní puška:</strong> 90 mm</p>
+                    <p><strong>Brnění:</strong> 102/76/51</p>
+                    <p><strong>Max. rychlost:</strong> 40.17 km/h</p>
+                    <p><strong>Reload time:</strong> 12.5 s</p>
+                    <p><strong>Kulomety:</strong> 7.62mm M1919A4 Machine Gun + 12.7mm M2HB Machine Gun</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní tank USA</p>
+                    <p><strong>Výhody:</strong><br>+ 90 mm puška: efektivní proti tankům i proti pěchotě<br>+ Solidní brnění</p>
+                    <p><strong>Nevýhody:</strong><br>- Rychlost<br>- Delší reload: 12.5 s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h4>Letadla:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/meteor_f_mk3.avif" alt="Meteor F Mk.3" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 822.23 km/h</p>
+                    <p><strong>Bomby:</strong> 2 x 1000 lb (cca 2 x 500 kg)</p>
+                    <p><strong>Rakety:</strong> N/A</p>
+                    <p><strong>Kulomety:</strong> 20mm Hispano Mk.II cannon X2</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní stíhací letoun</p>
+                    <p><strong>Výhody:</strong><br>+ Vysoká rychlost a manévrovatelnost<br>+ 2 x 1000 lb bomby<br>+ Účinné 20mm náboje</p>
+                    <p><strong>Nevýhody:</strong><br>- Chybí extra kulomety</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/p_47d_28.avif" alt="P-47D-28" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 887.75 km/h</p>
+                    <p><strong>Bomby:</strong> 1 x 500 lb (cca 1 x 250 kg)</p>
+                    <p><strong>Rakety:</strong> HVAR Rocket X10</p>
+                    <p><strong>Kulomety:</strong> 12.7mm M2 Browning Machine Gun (Late) X8</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Alternativa k Meteor F Mk.3, velmi silné rakety</p>
+                    <p><strong>Výhody:</strong><br>+ Vysoká rychlost a manévrovatelnost<br>+ Velmi účinné rakety<br>+ Hodně kulometů</p>
+                    <p><strong>Nevýhody:</strong><br>- Slabší bomby</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-content" data-faction="japan" style="display: none;">
+          <div class="faction-header">
+            <img src="/2024-p2b-web-projekt-daniel-kostan/images/meta/jap_logo.avif" alt="Japan icon" />
+            <h3>Japonsko</h3>
+          </div>
+          <div class="category">
+            <h4>Zbraně:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/type_hei_automatic_rifle.avif" alt="Type Hei Automatic Rifle" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 13.9</p>
+                    <p><strong>Rate of fire:</strong> 790</p>
+                    <p><strong>Reload time:</strong> 3.1 s</p>
+                    <p><strong>Zásobník:</strong> 30 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Type Hei Automatic Rifle je hlavní zbraní Japonska, nejlepší zbraň hry</p>
+                    <p><strong>Výhody:</strong><br>+ Zásobník na 30 ran<br>+ Dostupné pro class Rifleman => možnost 9 členných squadů<br>+ Velmi kontrolovatelný recoil<br>+ Bajonet</p>
+                    <p><strong>Nevýhody:</strong><br>- Závěr zbraně skáče do obrazu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/tokyo_arsenal.avif" alt="Tokyo Arsenal SMG" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 6.7</p>
+                    <p><strong>Rate of fire:</strong> 1380</p>
+                    <p><strong>Reload time:</strong> 3.1 s</p>
+                    <p><strong>Zásobník:</strong> 50 ran</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Jeden z nejlepších samopalů hry</p>
+                    <p><strong>Výhody:</strong><br>+ Zásobník na 50 ran<br>+ ROF: 1380</p>
+                    <p><strong>Nevýhody:</strong><br>- Dostupné pouze pro class Assaulter<br>- Nepříjemný recoil a menší přesnost</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/type_100_mg.avif" alt="Type 100 MG" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Damage:</strong> 26.4 (2 x 13.2)</p>
+                    <p><strong>Rate of fire:</strong> 1320 (2 x 660)</p>
+                    <p><strong>Reload time:</strong> 4.8 s</p>
+                    <p><strong>Zásobník:</strong> 100 ran (2 x 50)</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní kulomet Japonska, slepený ze dvou kulometů</p>
+                    <p><strong>Výhody:</strong><br>+ Damage: 13.2<br>+ Zásobník na 100 ran</p>
+                    <p><strong>Nevýhody:</strong><br>- Příšerná přesnost<br>- Dostupné pouze pro class Machine gunner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="category">
+            <h4>Tanky:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/hori_production.avif" alt="Ho-Ri Production" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Hlavní puška:</strong> 105 mm</p>
+                    <p><strong>Brnění:</strong> 120/75/35</p>
+                    <p><strong>Max. rychlost:</strong> 40.41 km/h</p>
+                    <p><strong>Reload time:</strong> 8.6 s</p>
+                    <p><strong>Kulomety:</strong> N/A</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní tank USA</p>
+                    <p><strong>Výhody:</strong><br>+ 105 mm puška: efektivní proti tankům i proti pěchotě<br>+ Silné brnění<br>+ Rychlý reload: 8.6 s</p>
+                    <p><strong>Nevýhody:</strong><br>- Rychlost<br>- Chybí kulomety</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h4>Letadla:</h4>
+            <div class="weapon-card">
+              <div class="weapon-info">
+                <div class="weapon__image-container">
+                  <img src="/images/meta/kikka.avif" alt="Kikka" class="weapon__image" />
+                </div>
+                <div class="weapon-info__description">
+                  <div class="weapon-info__stats">
+                    <p><strong>Max. rychlost:</strong> 881.99 km/h</p>
+                    <p><strong>Bomby:</strong> 1 x 800 kg</p>
+                    <p><strong>Rakety:</strong> N/A</p>
+                    <p><strong>Kulomety:</strong> 30mm Type 5 cannon X2</p>
+                  </div>
+                  <div class="weapon-info__comment">
+                    <p>Hlavní stíhací letoun Japonska</p>
+                    <p><strong>Výhody:</strong><br>+ Vysoká rychlost a manévrovatelnost<br>+ Velká 800kg bomba</p>
+                    <p><strong>Nevýhody:</strong><br>- Žádné extra kulomety</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
         <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
-    </footer>
+    </footer>
 
 </body>
 </html>

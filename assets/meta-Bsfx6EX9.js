@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const c=document.querySelectorAll(".faction-btn"),a=document.querySelectorAll(".faction-content");c.forEach(t=>{t.addEventListener("click",()=>{const s=t.dataset.faction;a.forEach(e=>{e.dataset.faction===s?e.style.display="block":e.style.display="none"}),c.forEach(e=>e.classList.remove("active")),t.classList.add("active")})})});
