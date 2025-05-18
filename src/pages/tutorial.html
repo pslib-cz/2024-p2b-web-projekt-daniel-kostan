@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/src/styles/hamburger.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutoriál</title>
-
 </head>
 
 <body>
@@ -29,11 +28,202 @@
       </nav>
     </div>
     </header>	
+    <main>
+      <h2 class="page__title">Tutoriál</h2>
+      <section>
+        <p>Přehledný návod na videohru Enlisted s obrázky, rozčleněný do několika kategorií.</p>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Základy Enlisted:</h3>
+          <p>Co je Enlisted?</p>
+          <p>Enlisted je taktická multiplayerová střílečka z pohledu první osoby, která je založená na systému squadů (družstev). Hru vyvíjí studio Darkflow Software a vydává Gaijin Entertainment.</p>
+          <p>Hra je zasazena do období druhé světové války a zaměřuje se na velké historické bitvy napříč různými frontami – včetně východní, západní, africké i tichomořské.</p>
+          <p>V momentální chvíli máme ve hře 4 frakce: SSSR, Německo, USA a Japonsko.</p>
+          <p>Můžete hrát jak za pěchotu tak i za tanky a letadla.</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/intro__image.avif" alt="Úvodní obrázek Enlisted" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Na rozdíl od většiny stříleček hráči v Enlisted ovládají celý squad (družstvo), nikoliv jen jednoho vojáka. I běžný zápas 10 proti 10 tak simuluje intenzivní bitvu s více než stovkou vojáků na mapě.</p>
+          <p>Každému vojákovi je možno udělit příkaz k pohybu, útoku nebo obraně, což přidává na strategické hloubce hry.</p>
+          <p>Příklad družstva ve hře:</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/squad.avif" alt="Příklad družstva ve hře Enlisted" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Každý voják je unikátní, má svou roli, svou zbraň a své vybavení. (více v sekci Vojáci a sekci Zbraně)</p>
+          <p>Všechno toto vybavení samozřejmě není zadarmo, nakupování a vylepšování používáme herní valutu Silver, pro nákup prémiových položek je potřeba použít herní valutu Gold. (více v sekci Progres => mikrotransakce)</p>
+        </div>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Gameplay:</h3>
+          <p>Hra probíhá vcelku velmi jednodušše: matchmaking najde 10 hráčů z jedné frakce a 10 hráčů z jiné frakce a poté je umístí do bitvy. Ve hře existuje několik herních módů, ale u všech jde pouze o jedno: obsadit strategické body rychleji než nepřítel.</p>
+          <p>Po spuštění bitvy hráč ovládá své družstvo (squad), které se skládá z několika vojáků s různými rolemi – například rifleman, engineer nebo assaulter. Kdykoliv během bitvy můžeš přepínat mezi přeživšími členy svého družstva, zatímco ostatní ovládá umělá inteligence. (podrobněji o třídách vojáků v sekci Vojáci)</p>
+          <p>Cílem je většinou dobývat nebo bránit strategické body rozmístěné na mapě. Hráči musí spolupracovat, aby obsadili cíle dříve než nepřítel, nebo je naopak udrželi. Pokud hráči ztratí všechny své posily (reinforcements), tým prohrává.</p>
+          <p>Herní módy se liší rozvržením a stylem boje. Nejčastěji se setkáš s těmito:</p>
+          <ul>
+            <li>Invasion: Útočící tým se snaží dobýt několik po sobě jdoucích bodů, zatímco obránci je brání. Každý bod otevře novou část mapy.</li>
+            <li>Assault: Oba týmy útočí a snaží se obsadit více cílů najednou. Důraz je kladen na koordinaci a rychlost.</li>
+            <li>Conquest: Na mapě je více zón k obsazení. Tým, který drží většinu, postupně vyčerpává posily soupeře.</li>
+          </ul>
+          <p>Kromě střelby je důležité i stavění: inženýři mohou stavět předsunuté spawnpointy, munici, zátarasy nebo kulomety. Správně umístěné stavby mohou výrazně ovlivnit průběh boje. (podrobněji o inženýrech a stavbách v sekci Vojáci)</p>
+          <p>Menu při vybírání spawnu:</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/battle_menu.avif" alt="Úvodní menu bitvy" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Ve hře máme několik užitečných mechanik:</p>
+          <ul>
+            <li>Ovládání squadu: zamířením a zmáčknutím klávesy X udělíte příkaz vojákům udržet nějakou pozici</li>
+            <li>Pingování: zamířením a zmáčknutím klávesy V označíte místo na mapě a upozorníte tak své spoluhráče</li>
+            <li>Komunikace: Hráči mohou používat textovou komunikaci nebo přednastavené příkazy k koordinaci s týmem</li>
+          </ul>
+        </div>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Progres:</h3>
+          <p>V Enlisted se postupuje pomocí získávání zkušeností (XP) během bitev. XP se dělí na tři typy:</p>
+          <ul>
+            <li>XP pro frakci – odemyká nové jednotky, zbraně a vozidla</li>
+            <li>XP pro squad – vylepšuje konkrétní družstvo, např. více vojáků nebo nové typy specialistů</li>
+            <li>XP pro jednotlivé vojáky – zlepšuje schopnosti jednotlivých vojáků</li>
+          </ul>
+
+          <p>Frakce a kampaně</p>
+          <p>Ve hře jsou čtyři hlavní frakce: SSSR, Německo, USA a Japonsko. Každá frakce má svůj vlastní technologický strom.</p>
+          <p>V rámci stromu odemykáš:</p>
+          <ul>
+            <li>Nové jednotky (squads)</li>
+            <li>Nové typy vojáků a zbraní</li>
+            <li>Vozidla (tanky, letadla)</li>
+            <li>Vybavení a výstroj</li>
+          </ul>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/tech_tree.avif" alt="Technologický strom" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Tech Tree a odemykání</p>
+          <p>Technologický strom je lineární – každá nová položka vyžaduje:</p>
+          <ul>
+            <li>Dostatečný počet XP získaných v bitvách</li>
+            <li>Odemčení za Silver</li>
+          </ul>
+
+          <p>Jak rychleji progresovat:</p>
+          <ul>
+            <li>Vyhrávej, při každé výhře se získané XP znásobí 1,5 krát</li>
+            <li>Umísti se vysoko v žebříčku týmu – získej více XP</li>
+            <li>Aktivuj boostery, které zvyšují získané XP</li>
+            <li>Pořiď si Premium Account – dává 2 krát více XP</li>
+            <li>Pořiď si Battle Pass – získáš přístup k exkluzivním odměnám a XP boosterům</li>
+          </ul>
+
+          <p>Mikrotransakce</p>
+          <p>Enlisted je free-to-play, ale obsahuje mikrotransakce pro rychlejší progres.</p>
+          <p>Premium účet:</p>
+          <ul>
+            <li>+100 % XP pro jednotky i frakce</li>
+            <li>Více slotů pro squad loadouty</li>
+            <li>20 euro ročně (pokud nakoupíš se slevou, jinak 40 euro)</li>
+          </ul>
+          <p>Battle Pass:</p>
+          <ul>
+            <li>Exkluzivní odměny a XP boostery</li>
+            <li>Sezónní zbraně</li>
+            <li>900 Gold (10 euro), pokud jsi aktivní hráč, tak se jedná o jednorázový nákup, z Battle Passu se ti vrátí 1000 Goldu</li>
+          </ul>
+        </div>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Battle rating (BR):</h3>
+          <p>Battle rating (BR) je systém hodnocení, který určuje sílu tvého loadoutu, pohybuje se od 1 do 5</p>
+          <p>BR se také používá k vyvážení týmů v bitvách, aby se zajistilo, že hráči s podobným BR budou hrát proti sobě.</p>
+          <p>Battle rating zbraně, tanku nebo letadla je napsán hned pod názvem:</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/gun_br.avif" alt="Battle rating zbraně" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Samotní vojáci mají také zobrazený jejich battle rating:</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/soldier_br.avif" alt="Battle rating vojáka" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Je dobré stavět loadouty, kde všichni vojáci mají stejný nebo alespoň podobný battle rating. Pokud budu mít všechny zbraně BR 1 a jedinému vojákovy dám zbraň BR 5, tak budu hrát proti lidem s BR 5, a tak bych měl nevýhodu na bojišti.</p>
+          <p>Před každým bojem je dobré si zkontrolovat battle rating, zda je takový jaký má být.</p>
+          <p>Celkový battle rating je vidět hned na několika místech v lobby:</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/br.avif" alt="Battle rating" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+        </div>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Třídy vojáků:</h3>
+          <p>Každý voják má svou roli a specializaci, která ovlivňuje jeho schopnosti a vybavení. Třídy vojáků jsou:</p>
+          <ul>
+            <li>Rifleman: Základní třída, která je vybavena puškou. Je univerzální a může být použita v různých situacích.</li>
+            <li>Assaulter: Vybavený samopalem, na blízký boj a rychlé útoky.</li>
+            <li>Sniper: Vybavený odstřelovací puškou, skvělý pro eliminaci nepřátel z dálky.</li>
+            <li>Engineer: Může stavět obranné struktury a opravit vozidla. Umí stavět rally pointy, které jsou klíčové pro mobilitu týmu. Je dobré mít alespoň jednoho inženýra v každém squadu.</li>
+            <li>Medic: Může léčit zraněné vojáky a oživovat je.</li>
+            <li>AT Gunner: Vybavený protitankovým kanónem, ideální pro ničení nepřátelských vozidel.</li>
+            <li>Machine Gunner: Vybavený kulometem, ideální pro rychlou střelbu a obranu.</li>
+            <li>Radio Operator: Má schopnost zavolat útok artilerie</li>
+            <li>Flametrooper: Vybavený plamenometem, ideální pro ničení nepřátel na blízko.</li>
+            <li>Guerrilla: Vybavený lehkým arzenálem, ideální pro partyzánské taktiky a překvapivé útoky.</li>
+            <li>Paratrooper: Vybavený padákem, ideální pro skoky do nepřátelského území a překvapivé útoky.</li>
+            <li>Mortarman: Vybavený mortarem, ideální pro dělostřeleckou podporu a ničení nepřátelských pozic.</li>
+            <li>Tanker: Vybavený tankem, ideální pro podporu pozemních jednotek a ničení nepřátelských vozidel.</li>
+            <li>Pilot: Vybavený letadlem, ideální pro vzdušnou podporu a bombardování.</li>
+          </ul>
+          <p>Každý voják má svůj vlastní level, který ovlivňuje jeho výkon v bitvě. Čím vyšší level, tím lepší perky mu můžeme přidělit.</p>
+          <p>Abychom mohli zvýšit level vojáka, musíme nejdřív získat dostatek XP ve squadu vojáka.</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/squad_upgrade.avif" alt="Vylepšení squadu" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+          <p>Perk point systém:</p>
+          <p>Každý voják může mít svoje unikátní perky, ty se dělí na tři skupiny:</p>
+          <ul>
+            <li>Mobility: zlepšují mobilitu vojáka, například rychlost pohybu nebo schopnost lépe se skrývat.</li>
+            <li>Vitality: zlepšují přežití vojáka, například rychlost léčení nebo odolnost vůči zraněním.</li>
+            <li>Weapon: zlepšují obratnost se zbraní vojáka, například přesnost střelby nebo účinnost zbraní.</li>
+          </ul>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/perk_system.avif" alt="Perk systém" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+        </div>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Zbraně, tanky a letadla:</h3>
+          <p>Každý voják má svou zbraň, která se liší podle třídy. Zbraně se dělí na:</p>
+          <ul>
+            <li>Odstřelovací pušky: na velké vzdálenosti, stačí jedna rána na kill</li>
+            <li>Samopaly: efektivní v blízkém boji</li>
+            <li>Samonabíjecí/automatické pušky: nejlepší zbraně ve hře, velký damage a přesnost s velkým počem výstřelů za minutu.</li>
+            <li>Protitankové zbraně: určeny pro ničení nepřátelských vozidel.</li>
+            <li>Kulomety: ideální pro rychlou střelbu a obranu.</li>
+          </ul>
+          <p>Tanky mají většinou dva typy nábojů, protitankový a protipěchotní.</p>
+          <p>Letadla mají bomby, rakety a kulomety.</p>
+          <p>Zbraně, tanky i letadla se mohou vylepšovat, předtím než je ale vylepšíme, musíme získat dostatek XP do squadu, se kterým byly nakoupeny.</p>
+          <div class="tutorial__image-container">
+            <img class="tutorial__image" src="/images/tutorial/gun_upgrade.avif" alt="Vylepšení zbraní" class="clickable-image" onclick="openFullscreen(this)"/>  
+          </div>
+        </div>
+        <div class="tutorial-section">
+          <h3 class="tutorial-section__headline">Nejčastější chyby:</h3>
+          <p>Zde jsou sepsané nejčastější chyby, kteří dělají i pokročilí hráči:</p>
+          <ul>
+            <li>Nestavění rally pointů: rally pointy jsou malé stavby, které mohou být postaveny pomocí kladiva vojáka třídy Engineer, jsou klíčové pro mobilitu týmu a rychlé obnovení po smrti.</li>
+            <li>Camping/nehrání na strategických bodech: hráči by měli aktivně obsazovat a bránit strategické body, místo aby se schovávali na okraji mapy.</li>
+            <li>Neupgradovaní zbraní/vozidel/vojáků: přináší velkou nevýhodu na bojišti.</li>
+            <li>Hraní špatného battle ratingu: všechny zbraně by měly mít stejný nebo alespoň podobný battle rating.</li>
+          </ul>
+        </div>
+      <p>Nyní jsi připraven na bitvu! Přeji hodně výher!</p>
+      </section>
+    </main>
     <footer class="footer">
         <p class="footer__text">© 2025 Daniel Kostan P2B Průmyslovka Liberec</p>
     </footer>
-    <script type="module" src="/src/scripts/swiper.js"></script>
     <script type="module" src="/src/scripts/main.js"></script>
+    <script>
+      function openFullscreen(img) {
+      const fullImg = document.createElement('img');
+      fullImg.src = img.src;
+      fullImg.alt = img.alt;
+      fullImg.classList.add('fullscreen-image');
+      fullImg.onclick = () => document.body.removeChild(fullImg);
+      document.body.appendChild(fullImg);
+    }
+    </script>
 </body>
 
 </html>
