@@ -1,22 +1,30 @@
-// core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
+import { Navigation, Pagination, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/thumbs';
 
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
-  navigation: {
-    nextEl: '.swiper-button-next', // Selector for the "next" button
-    prevEl: '.swiper-button-prev', // Selector for the "previous" button
-  },
-  pagination: {
-    el: '.swiper-pagination', // Selector for the pagination element
-    clickable: true, // Allow clicking on pagination bullets
-  },
-  loop: true, // Enable looping of slides
+const thumbSwiper = new Swiper('.swiper-thumbs', {
+modules: [Thumbs],
+spaceBetween: 10,
+slidesPerView: 4,
+freeMode: true,
+watchSlidesProgress: true,
+});
+
+const mainSwiper = new Swiper('.main-swiper', {
+modules: [Navigation, Pagination, Thumbs],
+loop: true,
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+thumbs: {
+swiper: thumbSwiper,
+},
 });

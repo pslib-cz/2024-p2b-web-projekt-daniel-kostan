@@ -205,6 +205,13 @@ body {
   padding: 0;
 }
 
+.external-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
 @media (min-width: 700px) {
   .main {
     display: grid;
